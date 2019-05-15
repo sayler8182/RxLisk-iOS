@@ -1,0 +1,1040 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F5BD17937735AA307ED2984 /* Pods_RxLiskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E053B1461B556E2566689B0 /* Pods_RxLiskTests.framework */; };
+		3FC0188AF90BA880D68986FE /* Pods_RxLisk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA5B4B0B4401898F6C657973 /* Pods_RxLisk.framework */; };
+		710874FF22849A6900953324 /* AlamofireDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710874FE22849A6900953324 /* AlamofireDecodable.swift */; };
+		7108750422849CFF00953324 /* LiskDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7108750322849CFF00953324 /* LiskDelegates.swift */; };
+		7108750722849D6D00953324 /* LiskModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7108750622849D6D00953324 /* LiskModule.swift */; };
+		7108750922849E9D00953324 /* Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7108750822849E9D00953324 /* Delegate.swift */; };
+		7108750B22849EF200953324 /* LiskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7108750A22849EF200953324 /* LiskModel.swift */; };
+		7108750D2284A54400953324 /* LiskNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7108750C2284A54400953324 /* LiskNode.swift */; };
+		710875112284A71E00953324 /* LiskConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710875102284A71E00953324 /* LiskConstants.swift */; };
+		710875132284AC1E00953324 /* SortDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710875122284AC1E00953324 /* SortDelegates.swift */; };
+		710875192284AE6000953324 /* MockNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710875182284AE6000953324 /* MockNetwork.swift */; };
+		7108751D2284B09100953324 /* LiskTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7108751C2284B09100953324 /* LiskTestCase.swift */; };
+		7108751F2284B22C00953324 /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7108751E2284B22C00953324 /* Optional.swift */; };
+		711097162289BA940031570D /* LiskTransactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711097152289BA940031570D /* LiskTransactions.swift */; };
+		711097192289BC6A0031570D /* SortTransactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711097182289BC6A0031570D /* SortTransactions.swift */; };
+		7110971B2289BCA30031570D /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7110971A2289BCA30031570D /* Transaction.swift */; };
+		7110971D2289C1A90031570D /* LiskTransactionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7110971C2289C1A90031570D /* LiskTransactionsTests.swift */; };
+		711AD461228AC02A00F8D5D4 /* NewTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711AD460228AC02A00F8D5D4 /* NewTransaction.swift */; };
+		712EAD692284658000A149DD /* RxLisk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 712EAD5F2284657F00A149DD /* RxLisk.framework */; };
+		712EAD6E2284658000A149DD /* LiskDelegatesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712EAD6D2284658000A149DD /* LiskDelegatesTests.swift */; };
+		712EAD702284658000A149DD /* RxLisk.h in Headers */ = {isa = PBXBuildFile; fileRef = 712EAD622284657F00A149DD /* RxLisk.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		712EAD7C228466FB00A149DD /* LiskNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712EAD7B228466FB00A149DD /* LiskNetwork.swift */; };
+		712EAD7E22846DDD00A149DD /* LiskResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712EAD7D22846DDD00A149DD /* LiskResponse.swift */; };
+		712EAD8122846FD400A149DD /* JSONDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712EAD8022846FD400A149DD /* JSONDecoder.swift */; };
+		715079262285F55800ED2F80 /* Forger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715079252285F55800ED2F80 /* Forger.swift */; };
+		715079282285F7E300ED2F80 /* ForgingStatistic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715079272285F7E300ED2F80 /* ForgingStatistic.swift */; };
+		7150792C2285FBAB00ED2F80 /* LiskVotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7150792B2285FBAB00ED2F80 /* LiskVotes.swift */; };
+		7150792E2285FBB600ED2F80 /* Votes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7150792D2285FBB600ED2F80 /* Votes.swift */; };
+		715079302285FBBC00ED2F80 /* Voters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7150792F2285FBBB00ED2F80 /* Voters.swift */; };
+		715079322285FE5D00ED2F80 /* SortVotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715079312285FE5D00ED2F80 /* SortVotes.swift */; };
+		715079342286005E00ED2F80 /* LiskVotesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715079332286005E00ED2F80 /* LiskVotesTests.swift */; };
+		71A3FD8D228AF7F300FEB89D /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A3FD8C228AF7F300FEB89D /* Crypto.swift */; };
+		71A3FD8F228AF94200FEB89D /* SHA256.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A3FD8E228AF94200FEB89D /* SHA256.swift */; };
+		71A3FD91228AF95000FEB89D /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A3FD90228AF95000FEB89D /* Random.swift */; };
+		71A3FD93228AF96400FEB89D /* MnemonicPassphrase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A3FD92228AF96400FEB89D /* MnemonicPassphrase.swift */; };
+		71A3FD95228AF97200FEB89D /* BytePacker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A3FD94228AF97200FEB89D /* BytePacker.swift */; };
+		71A3FD9D228AFAE600FEB89D /* KeyPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A3FD98228AFAE600FEB89D /* KeyPair.swift */; };
+		71A3FD9E228AFAE600FEB89D /* PublicKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A3FD99228AFAE600FEB89D /* PublicKey.swift */; };
+		71A3FD9F228AFAE600FEB89D /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A3FD9A228AFAE600FEB89D /* Error.swift */; };
+		71A3FDA0228AFAE600FEB89D /* PrivateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A3FD9B228AFAE600FEB89D /* PrivateKey.swift */; };
+		71A3FDA1228AFAE600FEB89D /* Seed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A3FD9C228AFAE600FEB89D /* Seed.swift */; };
+		71A3FDB6228AFB2300FEB89D /* precomp_data.h in Headers */ = {isa = PBXBuildFile; fileRef = 71A3FDA3228AFB2300FEB89D /* precomp_data.h */; };
+		71A3FDB7228AFB2300FEB89D /* ed25519.h in Headers */ = {isa = PBXBuildFile; fileRef = 71A3FDA5228AFB2300FEB89D /* ed25519.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		71A3FDB8228AFB2300FEB89D /* seed.c in Sources */ = {isa = PBXBuildFile; fileRef = 71A3FDA6228AFB2300FEB89D /* seed.c */; };
+		71A3FDB9228AFB2300FEB89D /* fe.c in Sources */ = {isa = PBXBuildFile; fileRef = 71A3FDA7228AFB2300FEB89D /* fe.c */; };
+		71A3FDBA228AFB2300FEB89D /* verify.c in Sources */ = {isa = PBXBuildFile; fileRef = 71A3FDA8228AFB2300FEB89D /* verify.c */; };
+		71A3FDBB228AFB2300FEB89D /* ge.c in Sources */ = {isa = PBXBuildFile; fileRef = 71A3FDA9228AFB2300FEB89D /* ge.c */; };
+		71A3FDBC228AFB2300FEB89D /* sc.c in Sources */ = {isa = PBXBuildFile; fileRef = 71A3FDAA228AFB2300FEB89D /* sc.c */; };
+		71A3FDBD228AFB2300FEB89D /* sign.c in Sources */ = {isa = PBXBuildFile; fileRef = 71A3FDAB228AFB2300FEB89D /* sign.c */; };
+		71A3FDBE228AFB2300FEB89D /* sha512.h in Headers */ = {isa = PBXBuildFile; fileRef = 71A3FDAC228AFB2300FEB89D /* sha512.h */; };
+		71A3FDBF228AFB2300FEB89D /* key_exchange.c in Sources */ = {isa = PBXBuildFile; fileRef = 71A3FDAD228AFB2300FEB89D /* key_exchange.c */; };
+		71A3FDC0228AFB2300FEB89D /* add_scalar.c in Sources */ = {isa = PBXBuildFile; fileRef = 71A3FDAE228AFB2300FEB89D /* add_scalar.c */; };
+		71A3FDC1228AFB2400FEB89D /* fe.h in Headers */ = {isa = PBXBuildFile; fileRef = 71A3FDAF228AFB2300FEB89D /* fe.h */; };
+		71A3FDC2228AFB2400FEB89D /* license.txt in Resources */ = {isa = PBXBuildFile; fileRef = 71A3FDB0228AFB2300FEB89D /* license.txt */; };
+		71A3FDC3228AFB2400FEB89D /* keypair.c in Sources */ = {isa = PBXBuildFile; fileRef = 71A3FDB1228AFB2300FEB89D /* keypair.c */; };
+		71A3FDC4228AFB2400FEB89D /* fixedint.h in Headers */ = {isa = PBXBuildFile; fileRef = 71A3FDB2228AFB2300FEB89D /* fixedint.h */; };
+		71A3FDC5228AFB2400FEB89D /* sha512.c in Sources */ = {isa = PBXBuildFile; fileRef = 71A3FDB3228AFB2300FEB89D /* sha512.c */; };
+		71A3FDC6228AFB2400FEB89D /* sc.h in Headers */ = {isa = PBXBuildFile; fileRef = 71A3FDB4228AFB2300FEB89D /* sc.h */; };
+		71A3FDC7228AFB2400FEB89D /* ge.h in Headers */ = {isa = PBXBuildFile; fileRef = 71A3FDB5228AFB2300FEB89D /* ge.h */; };
+		71A3FDCE228B008D00FEB89D /* CryptoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A3FDCD228B008D00FEB89D /* CryptoTests.swift */; };
+		71A3FDD0228B064300FEB89D /* NSNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A3FDCF228B064300FEB89D /* NSNumber.swift */; };
+		71EA49642287164300285D77 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EA49632287164300285D77 /* Account.swift */; };
+		71EA49662287164C00285D77 /* LiskAccounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EA49652287164C00285D77 /* LiskAccounts.swift */; };
+		71EA49682287181A00285D77 /* SortAccounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EA49672287181A00285D77 /* SortAccounts.swift */; };
+		71EA496A2287188600285D77 /* LiskAccountsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EA49692287188600285D77 /* LiskAccountsTests.swift */; };
+		71EA496E22871B2D00285D77 /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EA496D22871B2D00285D77 /* Block.swift */; };
+		71EA497022871B3800285D77 /* SortBlocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EA496F22871B3800285D77 /* SortBlocks.swift */; };
+		71EA497222871B4200285D77 /* LiskBlocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EA497122871B4200285D77 /* LiskBlocks.swift */; };
+		71EA497422871D5100285D77 /* LiskBlocksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EA497322871D5100285D77 /* LiskBlocksTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		712EAD6A2284658000A149DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 712EAD562284657F00A149DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 712EAD5E2284657F00A149DD;
+			remoteInfo = RxLisk;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1065DD6A37DF4DAF832FCD8A /* Pods-RxLiskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxLiskTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxLiskTests/Pods-RxLiskTests.release.xcconfig"; sourceTree = "<group>"; };
+		4B2A470FA6BF9283F7C7A2CC /* Pods-RxLisk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxLisk.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxLisk/Pods-RxLisk.debug.xcconfig"; sourceTree = "<group>"; };
+		5E053B1461B556E2566689B0 /* Pods_RxLiskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxLiskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		710874FE22849A6900953324 /* AlamofireDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireDecodable.swift; sourceTree = "<group>"; };
+		7108750322849CFF00953324 /* LiskDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiskDelegates.swift; sourceTree = "<group>"; };
+		7108750622849D6D00953324 /* LiskModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiskModule.swift; sourceTree = "<group>"; };
+		7108750822849E9D00953324 /* Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delegate.swift; sourceTree = "<group>"; };
+		7108750A22849EF200953324 /* LiskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiskModel.swift; sourceTree = "<group>"; };
+		7108750C2284A54400953324 /* LiskNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiskNode.swift; sourceTree = "<group>"; };
+		710875102284A71E00953324 /* LiskConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiskConstants.swift; sourceTree = "<group>"; };
+		710875122284AC1E00953324 /* SortDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortDelegates.swift; sourceTree = "<group>"; };
+		710875182284AE6000953324 /* MockNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetwork.swift; sourceTree = "<group>"; };
+		7108751C2284B09100953324 /* LiskTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiskTestCase.swift; sourceTree = "<group>"; };
+		7108751E2284B22C00953324 /* Optional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Optional.swift; sourceTree = "<group>"; };
+		711097152289BA940031570D /* LiskTransactions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiskTransactions.swift; sourceTree = "<group>"; };
+		711097182289BC6A0031570D /* SortTransactions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortTransactions.swift; sourceTree = "<group>"; };
+		7110971A2289BCA30031570D /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		7110971C2289C1A90031570D /* LiskTransactionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiskTransactionsTests.swift; sourceTree = "<group>"; };
+		711AD460228AC02A00F8D5D4 /* NewTransaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTransaction.swift; sourceTree = "<group>"; };
+		712EAD5F2284657F00A149DD /* RxLisk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxLisk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		712EAD622284657F00A149DD /* RxLisk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RxLisk.h; sourceTree = "<group>"; };
+		712EAD632284657F00A149DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		712EAD682284658000A149DD /* RxLiskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxLiskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		712EAD6D2284658000A149DD /* LiskDelegatesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiskDelegatesTests.swift; sourceTree = "<group>"; };
+		712EAD6F2284658000A149DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		712EAD7B228466FB00A149DD /* LiskNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiskNetwork.swift; sourceTree = "<group>"; };
+		712EAD7D22846DDD00A149DD /* LiskResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiskResponse.swift; sourceTree = "<group>"; };
+		712EAD8022846FD400A149DD /* JSONDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecoder.swift; sourceTree = "<group>"; };
+		715079252285F55800ED2F80 /* Forger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forger.swift; sourceTree = "<group>"; };
+		715079272285F7E300ED2F80 /* ForgingStatistic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgingStatistic.swift; sourceTree = "<group>"; };
+		7150792B2285FBAB00ED2F80 /* LiskVotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiskVotes.swift; sourceTree = "<group>"; };
+		7150792D2285FBB600ED2F80 /* Votes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Votes.swift; sourceTree = "<group>"; };
+		7150792F2285FBBB00ED2F80 /* Voters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Voters.swift; sourceTree = "<group>"; };
+		715079312285FE5D00ED2F80 /* SortVotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortVotes.swift; sourceTree = "<group>"; };
+		715079332286005E00ED2F80 /* LiskVotesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiskVotesTests.swift; sourceTree = "<group>"; };
+		71A3FD8C228AF7F300FEB89D /* Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
+		71A3FD8E228AF94200FEB89D /* SHA256.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHA256.swift; sourceTree = "<group>"; };
+		71A3FD90228AF95000FEB89D /* Random.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Random.swift; sourceTree = "<group>"; };
+		71A3FD92228AF96400FEB89D /* MnemonicPassphrase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MnemonicPassphrase.swift; sourceTree = "<group>"; };
+		71A3FD94228AF97200FEB89D /* BytePacker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BytePacker.swift; sourceTree = "<group>"; };
+		71A3FD98228AFAE600FEB89D /* KeyPair.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyPair.swift; sourceTree = "<group>"; };
+		71A3FD99228AFAE600FEB89D /* PublicKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicKey.swift; sourceTree = "<group>"; };
+		71A3FD9A228AFAE600FEB89D /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		71A3FD9B228AFAE600FEB89D /* PrivateKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivateKey.swift; sourceTree = "<group>"; };
+		71A3FD9C228AFAE600FEB89D /* Seed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Seed.swift; sourceTree = "<group>"; };
+		71A3FDA3228AFB2300FEB89D /* precomp_data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = precomp_data.h; sourceTree = "<group>"; };
+		71A3FDA5228AFB2300FEB89D /* ed25519.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ed25519.h; sourceTree = "<group>"; };
+		71A3FDA6228AFB2300FEB89D /* seed.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = seed.c; sourceTree = "<group>"; };
+		71A3FDA7228AFB2300FEB89D /* fe.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fe.c; sourceTree = "<group>"; };
+		71A3FDA8228AFB2300FEB89D /* verify.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = verify.c; sourceTree = "<group>"; };
+		71A3FDA9228AFB2300FEB89D /* ge.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ge.c; sourceTree = "<group>"; };
+		71A3FDAA228AFB2300FEB89D /* sc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sc.c; sourceTree = "<group>"; };
+		71A3FDAB228AFB2300FEB89D /* sign.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sign.c; sourceTree = "<group>"; };
+		71A3FDAC228AFB2300FEB89D /* sha512.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha512.h; sourceTree = "<group>"; };
+		71A3FDAD228AFB2300FEB89D /* key_exchange.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = key_exchange.c; sourceTree = "<group>"; };
+		71A3FDAE228AFB2300FEB89D /* add_scalar.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = add_scalar.c; sourceTree = "<group>"; };
+		71A3FDAF228AFB2300FEB89D /* fe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fe.h; sourceTree = "<group>"; };
+		71A3FDB0228AFB2300FEB89D /* license.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = license.txt; sourceTree = "<group>"; };
+		71A3FDB1228AFB2300FEB89D /* keypair.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = keypair.c; sourceTree = "<group>"; };
+		71A3FDB2228AFB2300FEB89D /* fixedint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fixedint.h; sourceTree = "<group>"; };
+		71A3FDB3228AFB2300FEB89D /* sha512.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sha512.c; sourceTree = "<group>"; };
+		71A3FDB4228AFB2300FEB89D /* sc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sc.h; sourceTree = "<group>"; };
+		71A3FDB5228AFB2300FEB89D /* ge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ge.h; sourceTree = "<group>"; };
+		71A3FDCD228B008D00FEB89D /* CryptoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTests.swift; sourceTree = "<group>"; };
+		71A3FDCF228B064300FEB89D /* NSNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSNumber.swift; sourceTree = "<group>"; };
+		71EA49632287164300285D77 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		71EA49652287164C00285D77 /* LiskAccounts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiskAccounts.swift; sourceTree = "<group>"; };
+		71EA49672287181A00285D77 /* SortAccounts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortAccounts.swift; sourceTree = "<group>"; };
+		71EA49692287188600285D77 /* LiskAccountsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiskAccountsTests.swift; sourceTree = "<group>"; };
+		71EA496D22871B2D00285D77 /* Block.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
+		71EA496F22871B3800285D77 /* SortBlocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortBlocks.swift; sourceTree = "<group>"; };
+		71EA497122871B4200285D77 /* LiskBlocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiskBlocks.swift; sourceTree = "<group>"; };
+		71EA497322871D5100285D77 /* LiskBlocksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiskBlocksTests.swift; sourceTree = "<group>"; };
+		8CC851FA75D8032797575095 /* Pods-RxLiskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxLiskTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxLiskTests/Pods-RxLiskTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BA5B4B0B4401898F6C657973 /* Pods_RxLisk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxLisk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC34489688692C352B111F15 /* Pods-RxLisk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxLisk.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxLisk/Pods-RxLisk.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		712EAD5C2284657F00A149DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FC0188AF90BA880D68986FE /* Pods_RxLisk.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		712EAD652284658000A149DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				712EAD692284658000A149DD /* RxLisk.framework in Frameworks */,
+				0F5BD17937735AA307ED2984 /* Pods_RxLiskTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4A74E8165DFA4A6A2C56AC2E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BA5B4B0B4401898F6C657973 /* Pods_RxLisk.framework */,
+				5E053B1461B556E2566689B0 /* Pods_RxLiskTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7108750022849CC200953324 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				71EA49612287163200285D77 /* Accounts */,
+				71EA496B22871B1A00285D77 /* Blocks */,
+				7108750122849CCA00953324 /* Delegates */,
+				711097142289BA860031570D /* Transactions */,
+				715079292285FB9600ED2F80 /* Votes */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		7108750122849CCA00953324 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				7108750222849CE800953324 /* Models */,
+				7108750322849CFF00953324 /* LiskDelegates.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		7108750222849CE800953324 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7108750822849E9D00953324 /* Delegate.swift */,
+				715079252285F55800ED2F80 /* Forger.swift */,
+				715079272285F7E300ED2F80 /* ForgingStatistic.swift */,
+				710875122284AC1E00953324 /* SortDelegates.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7108750522849D6000953324 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				7108750622849D6D00953324 /* LiskModule.swift */,
+				7108750A22849EF200953324 /* LiskModel.swift */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		710875142284ACEF00953324 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				71EA49692287188600285D77 /* LiskAccountsTests.swift */,
+				71EA497322871D5100285D77 /* LiskBlocksTests.swift */,
+				712EAD6D2284658000A149DD /* LiskDelegatesTests.swift */,
+				7110971C2289C1A90031570D /* LiskTransactionsTests.swift */,
+				715079332286005E00ED2F80 /* LiskVotesTests.swift */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		710875162284AE4300953324 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				71A3FDCC228B008200FEB89D /* Crypto */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		710875172284AE5100953324 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				710875182284AE6000953324 /* MockNetwork.swift */,
+				7108751C2284B09100953324 /* LiskTestCase.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		711097142289BA860031570D /* Transactions */ = {
+			isa = PBXGroup;
+			children = (
+				711097172289BC5A0031570D /* Models */,
+				711097152289BA940031570D /* LiskTransactions.swift */,
+			);
+			path = Transactions;
+			sourceTree = "<group>";
+		};
+		711097172289BC5A0031570D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7110971A2289BCA30031570D /* Transaction.swift */,
+				711AD460228AC02A00F8D5D4 /* NewTransaction.swift */,
+				711097182289BC6A0031570D /* SortTransactions.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		712EAD552284657F00A149DD = {
+			isa = PBXGroup;
+			children = (
+				712EAD612284657F00A149DD /* RxLisk */,
+				712EAD6C2284658000A149DD /* RxLiskTests */,
+				712EAD602284657F00A149DD /* Products */,
+				8129B942A488895120C4F791 /* Pods */,
+				4A74E8165DFA4A6A2C56AC2E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		712EAD602284657F00A149DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				712EAD5F2284657F00A149DD /* RxLisk.framework */,
+				712EAD682284658000A149DD /* RxLiskTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		712EAD612284657F00A149DD /* RxLisk */ = {
+			isa = PBXGroup;
+			children = (
+				7108750022849CC200953324 /* Modules */,
+				712EAD79228466DC00A149DD /* Core */,
+				71A3FD96228AFACC00FEB89D /* Utils */,
+				712EAD7F22846FC500A149DD /* Extensions */,
+				712EAD622284657F00A149DD /* RxLisk.h */,
+				712EAD632284657F00A149DD /* Info.plist */,
+			);
+			path = RxLisk;
+			sourceTree = "<group>";
+		};
+		712EAD6C2284658000A149DD /* RxLiskTests */ = {
+			isa = PBXGroup;
+			children = (
+				710875172284AE5100953324 /* Mock */,
+				710875142284ACEF00953324 /* Modules */,
+				710875162284AE4300953324 /* Core */,
+				712EAD6F2284658000A149DD /* Info.plist */,
+			);
+			path = RxLiskTests;
+			sourceTree = "<group>";
+		};
+		712EAD79228466DC00A149DD /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				71A3FD8B228AF7E700FEB89D /* Crypto */,
+				7108750522849D6000953324 /* Modules */,
+				712EAD7A228466E700A149DD /* Networking */,
+				710875102284A71E00953324 /* LiskConstants.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		712EAD7A228466E700A149DD /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				712EAD7B228466FB00A149DD /* LiskNetwork.swift */,
+				7108750C2284A54400953324 /* LiskNode.swift */,
+				712EAD7D22846DDD00A149DD /* LiskResponse.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		712EAD7F22846FC500A149DD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				710874FE22849A6900953324 /* AlamofireDecodable.swift */,
+				712EAD8022846FD400A149DD /* JSONDecoder.swift */,
+				7108751E2284B22C00953324 /* Optional.swift */,
+				71A3FDCF228B064300FEB89D /* NSNumber.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		715079292285FB9600ED2F80 /* Votes */ = {
+			isa = PBXGroup;
+			children = (
+				7150792A2285FB9F00ED2F80 /* Models */,
+				7150792B2285FBAB00ED2F80 /* LiskVotes.swift */,
+			);
+			path = Votes;
+			sourceTree = "<group>";
+		};
+		7150792A2285FB9F00ED2F80 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7150792F2285FBBB00ED2F80 /* Voters.swift */,
+				7150792D2285FBB600ED2F80 /* Votes.swift */,
+				715079312285FE5D00ED2F80 /* SortVotes.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		71A3FD8B228AF7E700FEB89D /* Crypto */ = {
+			isa = PBXGroup;
+			children = (
+				71A3FD94228AF97200FEB89D /* BytePacker.swift */,
+				71A3FD8C228AF7F300FEB89D /* Crypto.swift */,
+				71A3FD92228AF96400FEB89D /* MnemonicPassphrase.swift */,
+				71A3FD90228AF95000FEB89D /* Random.swift */,
+				71A3FD8E228AF94200FEB89D /* SHA256.swift */,
+			);
+			path = Crypto;
+			sourceTree = "<group>";
+		};
+		71A3FD96228AFACC00FEB89D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				71A3FDA2228AFB2300FEB89D /* CEd25519 */,
+				71A3FD97228AFAE600FEB89D /* Ed25519 */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		71A3FD97228AFAE600FEB89D /* Ed25519 */ = {
+			isa = PBXGroup;
+			children = (
+				71A3FD98228AFAE600FEB89D /* KeyPair.swift */,
+				71A3FD99228AFAE600FEB89D /* PublicKey.swift */,
+				71A3FD9A228AFAE600FEB89D /* Error.swift */,
+				71A3FD9B228AFAE600FEB89D /* PrivateKey.swift */,
+				71A3FD9C228AFAE600FEB89D /* Seed.swift */,
+			);
+			path = Ed25519;
+			sourceTree = "<group>";
+		};
+		71A3FDA2228AFB2300FEB89D /* CEd25519 */ = {
+			isa = PBXGroup;
+			children = (
+				71A3FDA3228AFB2300FEB89D /* precomp_data.h */,
+				71A3FDA4228AFB2300FEB89D /* include */,
+				71A3FDA6228AFB2300FEB89D /* seed.c */,
+				71A3FDA7228AFB2300FEB89D /* fe.c */,
+				71A3FDA8228AFB2300FEB89D /* verify.c */,
+				71A3FDA9228AFB2300FEB89D /* ge.c */,
+				71A3FDAA228AFB2300FEB89D /* sc.c */,
+				71A3FDAB228AFB2300FEB89D /* sign.c */,
+				71A3FDAC228AFB2300FEB89D /* sha512.h */,
+				71A3FDAD228AFB2300FEB89D /* key_exchange.c */,
+				71A3FDAE228AFB2300FEB89D /* add_scalar.c */,
+				71A3FDAF228AFB2300FEB89D /* fe.h */,
+				71A3FDB0228AFB2300FEB89D /* license.txt */,
+				71A3FDB1228AFB2300FEB89D /* keypair.c */,
+				71A3FDB2228AFB2300FEB89D /* fixedint.h */,
+				71A3FDB3228AFB2300FEB89D /* sha512.c */,
+				71A3FDB4228AFB2300FEB89D /* sc.h */,
+				71A3FDB5228AFB2300FEB89D /* ge.h */,
+			);
+			path = CEd25519;
+			sourceTree = "<group>";
+		};
+		71A3FDA4228AFB2300FEB89D /* include */ = {
+			isa = PBXGroup;
+			children = (
+				71A3FDA5228AFB2300FEB89D /* ed25519.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		71A3FDCC228B008200FEB89D /* Crypto */ = {
+			isa = PBXGroup;
+			children = (
+				71A3FDCD228B008D00FEB89D /* CryptoTests.swift */,
+			);
+			path = Crypto;
+			sourceTree = "<group>";
+		};
+		71EA49612287163200285D77 /* Accounts */ = {
+			isa = PBXGroup;
+			children = (
+				71EA49622287163B00285D77 /* Models */,
+				71EA49652287164C00285D77 /* LiskAccounts.swift */,
+			);
+			path = Accounts;
+			sourceTree = "<group>";
+		};
+		71EA49622287163B00285D77 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				71EA49632287164300285D77 /* Account.swift */,
+				71EA49672287181A00285D77 /* SortAccounts.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		71EA496B22871B1A00285D77 /* Blocks */ = {
+			isa = PBXGroup;
+			children = (
+				71EA496C22871B2600285D77 /* Models */,
+				71EA497122871B4200285D77 /* LiskBlocks.swift */,
+			);
+			path = Blocks;
+			sourceTree = "<group>";
+		};
+		71EA496C22871B2600285D77 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				71EA496D22871B2D00285D77 /* Block.swift */,
+				71EA496F22871B3800285D77 /* SortBlocks.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8129B942A488895120C4F791 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4B2A470FA6BF9283F7C7A2CC /* Pods-RxLisk.debug.xcconfig */,
+				FC34489688692C352B111F15 /* Pods-RxLisk.release.xcconfig */,
+				8CC851FA75D8032797575095 /* Pods-RxLiskTests.debug.xcconfig */,
+				1065DD6A37DF4DAF832FCD8A /* Pods-RxLiskTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		712EAD5A2284657F00A149DD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				712EAD702284658000A149DD /* RxLisk.h in Headers */,
+				71A3FDB7228AFB2300FEB89D /* ed25519.h in Headers */,
+				71A3FDC6228AFB2400FEB89D /* sc.h in Headers */,
+				71A3FDB6228AFB2300FEB89D /* precomp_data.h in Headers */,
+				71A3FDC1228AFB2400FEB89D /* fe.h in Headers */,
+				71A3FDC4228AFB2400FEB89D /* fixedint.h in Headers */,
+				71A3FDBE228AFB2300FEB89D /* sha512.h in Headers */,
+				71A3FDC7228AFB2400FEB89D /* ge.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		712EAD5E2284657F00A149DD /* RxLisk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 712EAD732284658000A149DD /* Build configuration list for PBXNativeTarget "RxLisk" */;
+			buildPhases = (
+				5AC0F5A3B9C49370A06F88FF /* [CP] Check Pods Manifest.lock */,
+				712EAD5A2284657F00A149DD /* Headers */,
+				712EAD5B2284657F00A149DD /* Sources */,
+				712EAD5C2284657F00A149DD /* Frameworks */,
+				712EAD5D2284657F00A149DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RxLisk;
+			productName = RxLisk;
+			productReference = 712EAD5F2284657F00A149DD /* RxLisk.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		712EAD672284658000A149DD /* RxLiskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 712EAD762284658000A149DD /* Build configuration list for PBXNativeTarget "RxLiskTests" */;
+			buildPhases = (
+				F4BF7F7178FAE12477A4C967 /* [CP] Check Pods Manifest.lock */,
+				712EAD642284658000A149DD /* Sources */,
+				712EAD652284658000A149DD /* Frameworks */,
+				712EAD662284658000A149DD /* Resources */,
+				A35F26344687EAC8B16A2AA4 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				712EAD6B2284658000A149DD /* PBXTargetDependency */,
+			);
+			name = RxLiskTests;
+			productName = RxLiskTests;
+			productReference = 712EAD682284658000A149DD /* RxLiskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		712EAD562284657F00A149DD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Limbo;
+				TargetAttributes = {
+					712EAD5E2284657F00A149DD = {
+						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 1020;
+					};
+					712EAD672284658000A149DD = {
+						CreatedOnToolsVersion = 10.2;
+					};
+				};
+			};
+			buildConfigurationList = 712EAD592284657F00A149DD /* Build configuration list for PBXProject "RxLisk" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 712EAD552284657F00A149DD;
+			productRefGroup = 712EAD602284657F00A149DD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				712EAD5E2284657F00A149DD /* RxLisk */,
+				712EAD672284658000A149DD /* RxLiskTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		712EAD5D2284657F00A149DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71A3FDC2228AFB2400FEB89D /* license.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		712EAD662284658000A149DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5AC0F5A3B9C49370A06F88FF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RxLisk-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A35F26344687EAC8B16A2AA4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RxLiskTests/Pods-RxLiskTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxOptional/RxOptional.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxTest/RxTest.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxOptional.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTest.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxLiskTests/Pods-RxLiskTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4BF7F7178FAE12477A4C967 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RxLiskTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		712EAD5B2284657F00A149DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71A3FD9E228AFAE600FEB89D /* PublicKey.swift in Sources */,
+				712EAD8122846FD400A149DD /* JSONDecoder.swift in Sources */,
+				71EA496E22871B2D00285D77 /* Block.swift in Sources */,
+				710875112284A71E00953324 /* LiskConstants.swift in Sources */,
+				71A3FD93228AF96400FEB89D /* MnemonicPassphrase.swift in Sources */,
+				711097162289BA940031570D /* LiskTransactions.swift in Sources */,
+				7108750D2284A54400953324 /* LiskNode.swift in Sources */,
+				71A3FDA0228AFAE600FEB89D /* PrivateKey.swift in Sources */,
+				71EA497222871B4200285D77 /* LiskBlocks.swift in Sources */,
+				71A3FDC0228AFB2300FEB89D /* add_scalar.c in Sources */,
+				71EA49682287181A00285D77 /* SortAccounts.swift in Sources */,
+				71A3FDC3228AFB2400FEB89D /* keypair.c in Sources */,
+				715079302285FBBC00ED2F80 /* Voters.swift in Sources */,
+				71A3FDC5228AFB2400FEB89D /* sha512.c in Sources */,
+				71A3FD9D228AFAE600FEB89D /* KeyPair.swift in Sources */,
+				71A3FDD0228B064300FEB89D /* NSNumber.swift in Sources */,
+				7150792E2285FBB600ED2F80 /* Votes.swift in Sources */,
+				71A3FDB8228AFB2300FEB89D /* seed.c in Sources */,
+				71A3FDBA228AFB2300FEB89D /* verify.c in Sources */,
+				712EAD7C228466FB00A149DD /* LiskNetwork.swift in Sources */,
+				7108750422849CFF00953324 /* LiskDelegates.swift in Sources */,
+				715079262285F55800ED2F80 /* Forger.swift in Sources */,
+				7108750922849E9D00953324 /* Delegate.swift in Sources */,
+				71A3FD9F228AFAE600FEB89D /* Error.swift in Sources */,
+				710874FF22849A6900953324 /* AlamofireDecodable.swift in Sources */,
+				7150792C2285FBAB00ED2F80 /* LiskVotes.swift in Sources */,
+				715079322285FE5D00ED2F80 /* SortVotes.swift in Sources */,
+				710875132284AC1E00953324 /* SortDelegates.swift in Sources */,
+				71A3FD91228AF95000FEB89D /* Random.swift in Sources */,
+				71A3FD8D228AF7F300FEB89D /* Crypto.swift in Sources */,
+				7110971B2289BCA30031570D /* Transaction.swift in Sources */,
+				7108750722849D6D00953324 /* LiskModule.swift in Sources */,
+				711AD461228AC02A00F8D5D4 /* NewTransaction.swift in Sources */,
+				7108750B22849EF200953324 /* LiskModel.swift in Sources */,
+				71A3FDA1228AFAE600FEB89D /* Seed.swift in Sources */,
+				71EA497022871B3800285D77 /* SortBlocks.swift in Sources */,
+				712EAD7E22846DDD00A149DD /* LiskResponse.swift in Sources */,
+				71A3FDB9228AFB2300FEB89D /* fe.c in Sources */,
+				71EA49662287164C00285D77 /* LiskAccounts.swift in Sources */,
+				71A3FDBF228AFB2300FEB89D /* key_exchange.c in Sources */,
+				71A3FD95228AF97200FEB89D /* BytePacker.swift in Sources */,
+				711097192289BC6A0031570D /* SortTransactions.swift in Sources */,
+				71A3FD8F228AF94200FEB89D /* SHA256.swift in Sources */,
+				7108751F2284B22C00953324 /* Optional.swift in Sources */,
+				71A3FDBC228AFB2300FEB89D /* sc.c in Sources */,
+				71A3FDBD228AFB2300FEB89D /* sign.c in Sources */,
+				71A3FDBB228AFB2300FEB89D /* ge.c in Sources */,
+				71EA49642287164300285D77 /* Account.swift in Sources */,
+				715079282285F7E300ED2F80 /* ForgingStatistic.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		712EAD642284658000A149DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71A3FDCE228B008D00FEB89D /* CryptoTests.swift in Sources */,
+				71EA497422871D5100285D77 /* LiskBlocksTests.swift in Sources */,
+				710875192284AE6000953324 /* MockNetwork.swift in Sources */,
+				712EAD6E2284658000A149DD /* LiskDelegatesTests.swift in Sources */,
+				715079342286005E00ED2F80 /* LiskVotesTests.swift in Sources */,
+				7110971D2289C1A90031570D /* LiskTransactionsTests.swift in Sources */,
+				71EA496A2287188600285D77 /* LiskAccountsTests.swift in Sources */,
+				7108751D2284B09100953324 /* LiskTestCase.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		712EAD6B2284658000A149DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 712EAD5E2284657F00A149DD /* RxLisk */;
+			targetProxy = 712EAD6A2284658000A149DD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		712EAD712284658000A149DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		712EAD722284658000A149DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		712EAD742284658000A149DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B2A470FA6BF9283F7C7A2CC /* Pods-RxLisk.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = KB85VH6WG5;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = RxLisk/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = site.limbo.RxLisk;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		712EAD752284658000A149DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC34489688692C352B111F15 /* Pods-RxLisk.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = KB85VH6WG5;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = RxLisk/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = site.limbo.RxLisk;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		712EAD772284658000A149DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CC851FA75D8032797575095 /* Pods-RxLiskTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KB85VH6WG5;
+				INFOPLIST_FILE = RxLiskTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = site.limbo.RxLiskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		712EAD782284658000A149DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1065DD6A37DF4DAF832FCD8A /* Pods-RxLiskTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KB85VH6WG5;
+				INFOPLIST_FILE = RxLiskTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = site.limbo.RxLiskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		712EAD592284657F00A149DD /* Build configuration list for PBXProject "RxLisk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				712EAD712284658000A149DD /* Debug */,
+				712EAD722284658000A149DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		712EAD732284658000A149DD /* Build configuration list for PBXNativeTarget "RxLisk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				712EAD742284658000A149DD /* Debug */,
+				712EAD752284658000A149DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		712EAD762284658000A149DD /* Build configuration list for PBXNativeTarget "RxLiskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				712EAD772284658000A149DD /* Debug */,
+				712EAD782284658000A149DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 712EAD562284657F00A149DD /* Project object */;
+}
