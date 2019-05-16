@@ -68,6 +68,10 @@
 		71A3FDC7228AFB2400FEB89D /* ge.h in Headers */ = {isa = PBXBuildFile; fileRef = 71A3FDB5228AFB2300FEB89D /* ge.h */; };
 		71A3FDCE228B008D00FEB89D /* CryptoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A3FDCD228B008D00FEB89D /* CryptoTests.swift */; };
 		71A3FDD0228B064300FEB89D /* NSNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A3FDCF228B064300FEB89D /* NSNumber.swift */; };
+		71BBCAD8228DD12300419885 /* LiskPeers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BBCAD7228DD12300419885 /* LiskPeers.swift */; };
+		71BBCADA228DD2F900419885 /* SortPeer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BBCAD9228DD2F900419885 /* SortPeer.swift */; };
+		71BBCADC228DD2FF00419885 /* Peer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BBCADB228DD2FF00419885 /* Peer.swift */; };
+		71BBCADE228DD50000419885 /* LiskPeersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BBCADD228DD50000419885 /* LiskPeersTests.swift */; };
 		71EA49642287164300285D77 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EA49632287164300285D77 /* Account.swift */; };
 		71EA49662287164C00285D77 /* LiskAccounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EA49652287164C00285D77 /* LiskAccounts.swift */; };
 		71EA49682287181A00285D77 /* SortAccounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EA49672287181A00285D77 /* SortAccounts.swift */; };
@@ -154,6 +158,10 @@
 		71A3FDB5228AFB2300FEB89D /* ge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ge.h; sourceTree = "<group>"; };
 		71A3FDCD228B008D00FEB89D /* CryptoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTests.swift; sourceTree = "<group>"; };
 		71A3FDCF228B064300FEB89D /* NSNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSNumber.swift; sourceTree = "<group>"; };
+		71BBCAD7228DD12300419885 /* LiskPeers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiskPeers.swift; sourceTree = "<group>"; };
+		71BBCAD9228DD2F900419885 /* SortPeer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortPeer.swift; sourceTree = "<group>"; };
+		71BBCADB228DD2FF00419885 /* Peer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Peer.swift; sourceTree = "<group>"; };
+		71BBCADD228DD50000419885 /* LiskPeersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiskPeersTests.swift; sourceTree = "<group>"; };
 		71EA49632287164300285D77 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		71EA49652287164C00285D77 /* LiskAccounts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiskAccounts.swift; sourceTree = "<group>"; };
 		71EA49672287181A00285D77 /* SortAccounts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortAccounts.swift; sourceTree = "<group>"; };
@@ -203,6 +211,7 @@
 				71EA49612287163200285D77 /* Accounts */,
 				71EA496B22871B1A00285D77 /* Blocks */,
 				7108750122849CCA00953324 /* Delegates */,
+				71BBCAD5228DD10D00419885 /* Peers */,
 				711097142289BA860031570D /* Transactions */,
 				715079292285FB9600ED2F80 /* Votes */,
 			);
@@ -244,6 +253,7 @@
 				71EA49692287188600285D77 /* LiskAccountsTests.swift */,
 				71EA497322871D5100285D77 /* LiskBlocksTests.swift */,
 				712EAD6D2284658000A149DD /* LiskDelegatesTests.swift */,
+				71BBCADD228DD50000419885 /* LiskPeersTests.swift */,
 				7110971C2289C1A90031570D /* LiskTransactionsTests.swift */,
 				715079332286005E00ED2F80 /* LiskVotesTests.swift */,
 			);
@@ -453,6 +463,24 @@
 				71A3FDCD228B008D00FEB89D /* CryptoTests.swift */,
 			);
 			path = Crypto;
+			sourceTree = "<group>";
+		};
+		71BBCAD5228DD10D00419885 /* Peers */ = {
+			isa = PBXGroup;
+			children = (
+				71BBCAD6228DD11900419885 /* Model */,
+				71BBCAD7228DD12300419885 /* LiskPeers.swift */,
+			);
+			path = Peers;
+			sourceTree = "<group>";
+		};
+		71BBCAD6228DD11900419885 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				71BBCADB228DD2FF00419885 /* Peer.swift */,
+				71BBCAD9228DD2F900419885 /* SortPeer.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		71EA49612287163200285D77 /* Accounts */ = {
@@ -711,13 +739,16 @@
 				711097162289BA940031570D /* LiskTransactions.swift in Sources */,
 				7108750D2284A54400953324 /* LiskNode.swift in Sources */,
 				71A3FDA0228AFAE600FEB89D /* PrivateKey.swift in Sources */,
+				71BBCAD8228DD12300419885 /* LiskPeers.swift in Sources */,
 				71EA497222871B4200285D77 /* LiskBlocks.swift in Sources */,
 				71A3FDC0228AFB2300FEB89D /* add_scalar.c in Sources */,
 				71EA49682287181A00285D77 /* SortAccounts.swift in Sources */,
 				71A3FDC3228AFB2400FEB89D /* keypair.c in Sources */,
+				71BBCADC228DD2FF00419885 /* Peer.swift in Sources */,
 				715079302285FBBC00ED2F80 /* Voters.swift in Sources */,
 				71A3FDC5228AFB2400FEB89D /* sha512.c in Sources */,
 				71A3FD9D228AFAE600FEB89D /* KeyPair.swift in Sources */,
+				71BBCADA228DD2F900419885 /* SortPeer.swift in Sources */,
 				71A3FDD0228B064300FEB89D /* NSNumber.swift in Sources */,
 				7150792E2285FBB600ED2F80 /* Votes.swift in Sources */,
 				71A3FDB8228AFB2300FEB89D /* seed.c in Sources */,
@@ -759,6 +790,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71BBCADE228DD50000419885 /* LiskPeersTests.swift in Sources */,
 				71A3FDCE228B008D00FEB89D /* CryptoTests.swift in Sources */,
 				71EA497422871D5100285D77 /* LiskBlocksTests.swift in Sources */,
 				710875192284AE6000953324 /* MockNetwork.swift in Sources */,

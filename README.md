@@ -23,7 +23,7 @@ Lisk Swift is heavily inspired by [Lisk Swift](https://github.com/AndrewBarba/li
 - [ ] Dapps
 - [x] Delegates
 - [ ] Node
-- [ ] Peers
+- [x] Peers
 - [ ] Signatures
 - [x] Transactions
 - [x] Voters
