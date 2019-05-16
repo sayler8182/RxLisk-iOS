@@ -143,6 +143,6 @@ class LiskDelegatesTests: LiskTestCase {
         
         // forgingStatistics
         let forgingStatistics = module.forgingStatistics(address: "3117604376908782776L")
-        let _ = self.blockSuccess(forgingStatistics)!
+        _ = self.blockSuccess(forgingStatistics)!
     }
 }

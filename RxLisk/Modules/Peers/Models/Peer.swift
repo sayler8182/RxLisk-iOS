@@ -72,7 +72,7 @@ public extension LiskPeers {
     }
 }
 
-// MARK: Delegate
+// MARK: PeerState
 public extension LiskPeers {
     enum PeerState: UInt, Decodable {
         case connected      = 0
