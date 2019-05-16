@@ -94,8 +94,7 @@ public extension LiskBlocks {
     ///   - blockId: Block id to query
     ///   - generatorPublicKey: Public key of the forger of the block
     func block(blockId: String? = nil,
-               generatorPublicKey: String? = nil,
-               sort: SortBlock? = nil) -> Single<Block> {
+               generatorPublicKey: String? = nil) -> Single<Block> {
         
         // blocks
         let blocks = self.blocks(
